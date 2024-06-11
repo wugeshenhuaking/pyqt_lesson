@@ -17,6 +17,11 @@ class Stats:
 
         self.button.clicked.connect(self.handleCalc)
 
+        self.button = QPushButton('统计', self.window)
+        self.button.move(380, 180)
+
+        self.button.clicked.connect(self.handleCalc)
+
 
     def handleCalc(self):
         info = self.textEdit.toPlainText()
