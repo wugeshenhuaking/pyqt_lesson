@@ -51,3 +51,5 @@ app = QApplication([])
 stats = Stats()
 stats.window.show()
 app.exec_()
+
+Stats.__init__()
