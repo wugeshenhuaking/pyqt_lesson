@@ -26,7 +26,7 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -128,7 +128,7 @@
     <property name="title">
      <string>GroupBox</string>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -226,7 +226,7 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -274,7 +274,7 @@
      </layout>
     </widget>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>21</x>
@@ -283,7 +283,7 @@
       <height>161</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_10">
+    <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="3,7">
      <item>
       <widget class="QGroupBox" name="groupBox">
        <property name="cursor">
@@ -292,7 +292,7 @@
        <property name="title">
         <string/>
        </property>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -409,7 +409,7 @@
        <property name="title">
         <string/>
        </property>
-       <widget class="QWidget" name="">
+       <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -418,9 +418,9 @@
           <height>214</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout" stretch="3,7">
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="4,6">
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,5,3">
            <item>
             <widget class="QGroupBox" name="groupBox_7">
              <property name="title">
@@ -656,19 +656,13 @@ p, li { white-space: pre-wrap; }
          </item>
         </layout>
        </widget>
-       <zorder>groupBox_8</zorder>
-       <zorder>groupBox_7</zorder>
-       <zorder>textEdit</zorder>
-       <zorder>line</zorder>
       </widget>
      </item>
     </layout>
    </widget>
+   <zorder>layoutWidget</zorder>
    <zorder>groupBox_5</zorder>
    <zorder>groupBox_4</zorder>
-   <zorder>groupBox</zorder>
-   <zorder>groupBox_2</zorder>
-   <zorder>groupBox_3</zorder>
    <zorder>groupBox_6</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
