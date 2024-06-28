@@ -25,27 +25,27 @@ class SerialCommWindow(QMainWindow):
     def initUI(self):
         self.setWindowTitle('Serial Port Selector')
 
-        # 鍒涘缓涓績绐楀彛閮ㄤ欢鍜屽竷灞�
+        # 创建中心窗口部件和布局
         central_widget = QWidget()
         layout = QVBoxLayout(central_widget)
         self.setCentralWidget(central_widget)
         
-        # 娣诲姞鏍囩璇存槑
+        # 添加标签说明
         label = QLabel("Available Serial Ports:", self)
         layout.addWidget(label)
         
-        # 鍒涘缓涓嬫媺鍒楄〃妗嗙敤浜庨�夋嫨涓插彛
+        # 创建下拉列表框用于选择串口
         self.port_combo = QComboBox(self)
         layout.addWidget(self.port_combo)
         
-        # 濉厖涓插彛鍒楄〃
+        # 填充串口列表
         self.fill_serial_ports()
         
-        # 璁剧疆甯冨眬
+        # 设置布局
         self.setGeometry(100, 100, 400, 100)
     
     def fill_serial_ports(self):
-        """濉厖涓插彛涓嬫媺鍒楄〃"""
+        """填充串口下拉列表"""
         ports = serial.tools.list_ports.comports()
         for port, desc, hwid in sorted(ports):
             self.port_combo.addItem(desc)

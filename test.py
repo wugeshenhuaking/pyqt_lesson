@@ -5,19 +5,19 @@ class Stats:
         self.window = QMainWindow()
         self.window.resize(500, 400)
         self.window.move(300, 300)
-        self.window.setWindowTitle('è–ªèµ„ç»Ÿè®¡')
+        self.window.setWindowTitle('Ð½×ÊÍ³¼Æ')
 
         self.textEdit = QPlainTextEdit(self.window)
-        self.textEdit.setPlaceholderText("è¯·è¾“å…¥è–ªèµ„è¡¨")
+        self.textEdit.setPlaceholderText("ÇëÊäÈëÐ½×Ê±í")
         self.textEdit.move(10, 25)
         self.textEdit.resize(300, 350)
 
-        self.button = QPushButton('ç»Ÿè®¡', self.window)
+        self.button = QPushButton('Í³¼Æ', self.window)
         self.button.move(380, 80)
 
         self.button.clicked.connect(self.handleCalc)
 
-        self.button = QPushButton('ç»Ÿè®¡', self.window)
+        self.button = QPushButton('Í³¼Æ', self.window)
         self.button.move(380, 180)
 
         self.button.clicked.connect(self.handleCalc)
@@ -26,14 +26,14 @@ class Stats:
     def handleCalc(self):
         info = self.textEdit.toPlainText()
 
-        # è–ªèµ„20000 ä»¥ä¸Š å’Œ ä»¥ä¸‹ çš„äººå‘˜åå•
+        # Ð½×Ê20000 ÒÔÉÏ ºÍ ÒÔÏÂ µÄÈËÔ±Ãûµ¥
         salary_above_20k = ''
         salary_below_20k = ''
         for line in info.splitlines():
             if not line.strip():
                 continue
             parts = line.split(' ')
-            # åŽ»æŽ‰åˆ—è¡¨ä¸­çš„ç©ºå­—ç¬¦ä¸²å†…å®¹
+            # È¥µôÁÐ±íÖÐµÄ¿Õ×Ö·û´®ÄÚÈÝ
             parts = [p for p in parts if p]
             name,salary,age = parts
             if int(salary) >= 20000:
@@ -42,9 +42,9 @@ class Stats:
                 salary_below_20k += name + '\n'
 
         QMessageBox.about(self.window,
-                    'ç»Ÿè®¡ç»“æžœ',
-                    f'''è–ªèµ„20000 ä»¥ä¸Šçš„æœ‰ï¼š\n{salary_above_20k}
-                    \nè–ªèµ„20000 ä»¥ä¸‹çš„æœ‰ï¼š\n{salary_below_20k}'''
+                    'Í³¼Æ½á¹û',
+                    f'''Ð½×Ê20000 ÒÔÉÏµÄÓÐ£º\n{salary_above_20k}
+                    \nÐ½×Ê20000 ÒÔÏÂµÄÓÐ£º\n{salary_below_20k}'''
                     )
 
 app = QApplication([])
