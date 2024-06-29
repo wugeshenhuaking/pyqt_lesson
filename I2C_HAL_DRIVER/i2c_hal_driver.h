@@ -16,11 +16,11 @@ typedef struct {
 
 void IICStart(iic_bus_t *bus);
 void IICStop(iic_bus_t *bus);
-unsigned char IICWaitAck(iic_bus_t *bus);
+uint8_t IICWaitAck(iic_bus_t *bus);
 void IICSendAck(iic_bus_t *bus);
 void IICSendNotAck(iic_bus_t *bus);
-void IICSendByte(iic_bus_t *bus, unsigned char cSendByte);
-unsigned char IICReceiveByte(iic_bus_t *bus);
+void IICSendByte(iic_bus_t *bus, uint8_tcSendByte);
+uint8_t IICReceiveByte(iic_bus_t *bus);
 void IICInit(iic_bus_t *bus);
 
 uint8_t IIC_Write_One_Byte(iic_bus_t *bus, uint8_t daddr,uint8_t reg,uint8_t data);
