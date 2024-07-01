@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "bsp_mpu6050.h": "c",
+    "b1793mpuxxxx.h": "c"
+  }
+}

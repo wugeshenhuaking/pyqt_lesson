@@ -31,8 +31,8 @@
 /*         interface from core library        */
 // i2c interface
 typedef struct{
-  int8_t (*pf_init)(void);
-  int8_t (*pf_deinit)(void);
+  int8_t (*pf_init)(void *);
+  int8_t (*pf_deinit)(void *);
   int8_t (*pf_read)(uint8_t addr, uint8_t *data, uint8_t len);
   int8_t (*pf_write)(uint8_t addr, uint8_t *data, uint8_t len);
 }iic_driver_interface_t;

@@ -12,7 +12,7 @@
 #define MPU_CFG_REG						0X1A	//���üĴ���
 #define MPU_GYRO_CFG_REG			0X1B	//���������üĴ���
 #define MPU_ACCEL_CFG_REG			0X1C	//���ٶȼ����üĴ���
-#define MPU_MOTION_DET_REG		0X1F	//�˶���ֵⷧ���üĴ���
+#define MPU_MOTION_DET_REG		0X1F	//�˶���ֵⷧ���üĴ���?
 #define MPU_MOTION_DUR_REG		0X20	//motion time value
 #define MPU_FIFO_EN_REG				0X23	//FIFOʹ�ܼĴ���
 #define MPU_I2CMST_CTRL_REG		0X24	//IIC�������ƼĴ���
@@ -39,22 +39,22 @@
 #define MPU_INT_EN_REG				0X38	//�ж�ʹ�ܼĴ���
 #define MPU_INT_STA_REG				0X3A	//�ж�״̬�Ĵ���
 
-#define MPU_ACCEL_XOUTH_REG		0X3B	//���ٶ�ֵ,X���8λ�Ĵ���
-#define MPU_ACCEL_XOUTL_REG		0X3C	//���ٶ�ֵ,X���8λ�Ĵ���
-#define MPU_ACCEL_YOUTH_REG		0X3D	//���ٶ�ֵ,Y���8λ�Ĵ���
-#define MPU_ACCEL_YOUTL_REG		0X3E	//���ٶ�ֵ,Y���8λ�Ĵ���
-#define MPU_ACCEL_ZOUTH_REG		0X3F	//���ٶ�ֵ,Z���8λ�Ĵ���
-#define MPU_ACCEL_ZOUTL_REG		0X40	//���ٶ�ֵ,Z���8λ�Ĵ���
+#define MPU_ACCEL_XOUTH_REG		0X3B	//���ٶ�ֵ,X���?8λ�Ĵ���
+#define MPU_ACCEL_XOUTL_REG		0X3C	//���ٶ�ֵ,X���?8λ�Ĵ���
+#define MPU_ACCEL_YOUTH_REG		0X3D	//���ٶ�ֵ,Y���?8λ�Ĵ���
+#define MPU_ACCEL_YOUTL_REG		0X3E	//���ٶ�ֵ,Y���?8λ�Ĵ���
+#define MPU_ACCEL_ZOUTH_REG		0X3F	//���ٶ�ֵ,Z���?8λ�Ĵ���
+#define MPU_ACCEL_ZOUTL_REG		0X40	//���ٶ�ֵ,Z���?8λ�Ĵ���
 
 #define MPU_TEMP_OUTH_REG			0X41	//�¶�ֵ�߰�λ�Ĵ���
 #define MPU_TEMP_OUTL_REG			0X42	//�¶�ֵ��8λ�Ĵ���
 
-#define MPU_GYRO_XOUTH_REG		0X43	//������ֵ,X���8λ�Ĵ���
-#define MPU_GYRO_XOUTL_REG		0X44	//������ֵ,X���8λ�Ĵ���
-#define MPU_GYRO_YOUTH_REG		0X45	//������ֵ,Y���8λ�Ĵ���
-#define MPU_GYRO_YOUTL_REG		0X46	//������ֵ,Y���8λ�Ĵ���
-#define MPU_GYRO_ZOUTH_REG		0X47	//������ֵ,Z���8λ�Ĵ���
-#define MPU_GYRO_ZOUTL_REG		0X48	//������ֵ,Z���8λ�Ĵ���
+#define MPU_GYRO_XOUTH_REG		0X43	//������ֵ,X���?8λ�Ĵ���
+#define MPU_GYRO_XOUTL_REG		0X44	//������ֵ,X���?8λ�Ĵ���
+#define MPU_GYRO_YOUTH_REG		0X45	//������ֵ,Y���?8λ�Ĵ���
+#define MPU_GYRO_YOUTL_REG		0X46	//������ֵ,Y���?8λ�Ĵ���
+#define MPU_GYRO_ZOUTH_REG		0X47	//������ֵ,Z���?8λ�Ĵ���
+#define MPU_GYRO_ZOUTL_REG		0X48	//������ֵ,Z���?8λ�Ĵ���
 
 #define MPU_MOT_DET_STA_REG 	0x61	//motion detect status
 
@@ -74,8 +74,8 @@
 #define MPU_FIFO_RW_REG				0X74	//FIFO��д�Ĵ���
 #define MPU_DEVICE_ID_REG			0X75	//����ID�Ĵ���
  
-//���AD0��(9��)�ӵ�,IIC��ַΪ0X68(���������λ).
-//�����V3.3,��IIC��ַΪ0X69(���������λ).
+//���AD0��(9��)�ӵ�,IIC��ַΪ0X68(����������?).
+//�����V3.3,��IIC��ַΪ0X69(����������?).
 //01101000
 #define MPU_ADDR				0X68
 #define MPU_ID					0x68
